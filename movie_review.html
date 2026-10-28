@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review & Rating Portal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: #141414; color: #fff; }
+        header { background: #1f1f1f; padding: 1.5rem 2rem; text-align: center; border-bottom: 2px solid #e50914; }
+        header h1 { color: #e50914; font-size: 2rem; }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+        .movie-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .movie-card { background: #1f1f1f; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.5); transition: transform 0.3s; }
+        .movie-card:hover { transform: scale(1.03); }
+        .movie-poster { height: 200px; background: #333; display: flex; align-items: center; justify-content: center; color: #777; font-size: 1.2rem; }
+        .movie-info { padding: 1.5rem; }
+        .movie-title { font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff; }
+        .genre { font-size: 0.85rem; color: #e50914; margin-bottom: 0.5rem; font-weight: bold; }
+        .synopsis { font-size: 0.9rem; color: #aaa; margin-bottom: 1rem; }
+        .rating { background: #333; padding: 0.4rem 0.8rem; border-radius: 4px; display: inline-block; font-weight: bold; color: #f5c518; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CineReview Portal</h1>
+    </header>
+
+    <div class="container">
+        <div class="movie-grid">
+            <div class="movie-card">
+                <div class="movie-poster">Poster 1</div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Cybernetic Dawn</h3>
+                    <div class="genre">Action / Sci-Fi</div>
+                    <p class="synopsis">An epic sci-fi journey exploring artificial intelligence and futuristic cityscapes.</p>
+                    <div class="rating">⭐ 4.5 / 5</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">Poster 2</div>
+                <div class="movie-info">
+                    <h3 class="movie-title">The Hidden Realm</h3>
+                    <div class="genre">Adventure / Mystery</div>
+                    <p class="synopsis">Explorers discover ancient ruins hidden deep within unexplored tropical mountains.</p>
+                    <div class="rating">⭐ 4.2 / 5</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">Poster 3</div>
+                <div class="movie-info">
+                    <h3 class="movie-title">Echoes of Time</h3>
+                    <div class="genre">Drama / Thriller</div>
+                    <p class="synopsis>">A gripping drama about choices, consequences, and time loops.</p>
+                    <div class="rating">⭐ 4.8 / 5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
